@@ -1,0 +1,297 @@
+ <!DOCTYPE html>
+ <html lang="tr">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Html Çalışma Sitesi</title>
+ </head>
+ <body>
+  <header><div>
+    <h1>KODLUYORUZ HTML DERSLERİ</h1> 
+    <!-- açıklama satırları
+  bunlar sitede görünmüyorlar, kendimize not için kullanılabilir  -->
+  <h2>Html dersleri çalışmaları</h2>,
+  </div></header>
+ 
+  <nav>
+    <ul>
+    <li><a href="#one">
+      Başlık ve paragraflar
+    </a>
+  </li>
+    
+  <li>    <a href="#two">
+    listeler
+  </a>        
+  </li>
+    
+    <li>            <a href="#three">
+      Emmet
+    </a>
+  </li>
+    
+    <li>            <a href="#four">
+      GÖRSELLER
+    </a>
+  </li>
+    
+    <li>            <a href="#five">
+      linkler
+    </a>
+  </li>
+
+  <li>              <a href="#six">
+    İnline ve Blok
+  </a>
+      </li>
+
+      <li> <a href="#seven">
+        HTML Etiketleri İçin Ekstra Özellikler
+      </a>
+      </li>
+    
+      <li> <a href="#eight">
+          İskeletin Yapısını Anlamak
+      </a>
+      </li>
+
+      <li><a href="#nine">
+          Semantic Etiketler
+      </a>
+      </li>
+      
+      </ul>
+</nav>
+ 
+ <hr>
+
+ <article>
+ <div><h3 id="one">başlık ve paragraflar</h3>
+ 
+  <p>jdfkljsdklfjsdf
+   sdfkldsfkldsjf
+   dksflsdlfjsd
+   dfksflşafd
+ 
+ </p>
+ <p> kjkladsjflkdsajf </p>
+ <p>kdsajkljdklfjdsalk</p>
+ <h4>hdörtlü başlık bu boyda</h4>
+ <p>bu bir paragraf 
+     <p>bu da paragraf içinde bir paragraf</p>
+ </p>
+ 
+ <hr>
+ 
+ <h1 id="two">Listeler ve Kullanımları</h1>
+ <p>Listeler için ol, ul ve li komutlarımız var, nasıl çalışırlar deneyelim</p>
+ <!-- ol yazdığım zaman sıralı yani 1 2 3 diye giden listeler oluşacak  
+ --> 
+ <!-- ol kodları arasına her bir madde için li arasına cümleleri sıkıştıracağım -->
+ <ol>
+   <li>ilk sıralı liste</li>
+   <li>ikinci sıralı liste</li>
+   <li>üçüncü sıralı liste</li>
+ 
+ </ol>
+ 
+ 
+ <p>Ol ile yazdığımız maddeleri gördük. Ul kodu ile aynı adımları uygulayarak noktalı madde koyabiliriz:</p>
+ <ul>
+     <li>ilk sıralı liste</li>
+     <li>ikinci sıralı liste</li>
+     <li>üçüncü sıralı liste</li>
+ 
+ </ul>
+ 
+ <p>Liste içinde liste de yapabiliyoruz:</p>
+ <ul>
+   <li>liste bir 
+     <ul>
+     <li>listenin içindeki liste </li>
+     </ul>
+     <li>Liste 2</li>
+   </li>
+ </ul>
+ 
+ <hr>
+ 
+ <h1 id="three">EMMET İLE HIZLI YAZMA</h1>
+ <p>Bunun sayesinde kodu yazarken tab a tıklayarak kodu otamatik tamamlıyoruz.</p>
+ <h3>Özellikleri</h3>
+ <ul>
+   <li>Etiket isimlerini direkt verebiliyoruz.</li>
+   <li>+ tuşunu kullanarak ardı ardına kod oluşturulmasını sağlayabiliyoruz </li>
+   <!-- mesela li+li+li+li yazarak alt alta 4 adet oluşturdum. Aynı şekilde * işareti ile
+   kaç tane istediğimizi seçebiliriz. Mesela li*4 dersem doğrudan  tane li yapar-->
+   <li>> ile içinde öge oluşturabiliyoruz.</li>
+   <!--Mesela ul>li yazıp tab a basarsam ul içinde li yapar-->
+   <li>kare işareti (biligisayarda  tuşu çalışmadığı için yazamıyorum) altına alarak yazdırırken üstte 
+     bir başlık yazmamıza yarar.</li>
+ <li>lorem yazıp taba basarsak anlamsız yazılar oluşturur</li>  
+   <li>ul>li.text red yazıp taba basarsak içinde text red yazan listeler oluşur.</li>
+   </ul>
+ 
+ <hr>
+ 
+   <h1 id="four">GÖRSELLER İLE ÇALIŞMAK 30 OCAK</h1>
+   <p>img yazıp taba bastığımız zaman bir ifade çıkıyor ve buna görsellerin bağlantılarını yazabiliyoruz.</p>
+   <!--<img src="Fotoğrafın linki" alt="ismi"> -->
+   <p>Lorem picsum sayfasında pekçok güzel fotoğraf bulabiliriz.</p>
+  <p>Burada loremden bir adres var ve random fotoğraf oluşturuyor:</p>
+  <img src="https://picsum.photos/200/300" alt="lorem picsum fotoğrafı"> 
+ 
+   <p>Başka bi yolu masaüstünden fotoğraf eklemek. Proje dosyasının içine bir image 
+     klasörü oluşturalım. Klasör adını yazıp / koyup fotoğraf adını yazalım.
+   </p>
+   <img src="images/aa.jpg" alt="Eyfel Kulesi">
+ 
+   <p>img yazısının önüne width yazarak genişlik ayarlayabiliriz. Eyfel kulesini genişletelim:</p>
+   <img width="300" src="images/aa.jpg" alt="eyfel kulesi geniş"> 
+ <p>sadece width komutu ile genişletirsek otomatik olarak uzatacaktır. Bunu engllemek için 
+   height komutu kullanıyoruz. Kuleyi uzatalım: 
+ </p>
+  <img width="200" height="400" src="images/aa.jpg" alt="kule uzun ince">
+  <!--girdiğimiz komut: <img width="200" height="400" src="images/aa.jpg" alt="kule uzun ince"> -->
+  
+   <p>Bunlar dışında border komutu çerçeve, title komutu görsele açıklama yapmaya, align komutu 
+     görseli sağa veya sola yaslamaya yarar.
+   </p>  
+ 
+ <hr>
+ 
+   <h1 id="five"> Linklerle Çalışmak </h1>
+   <P>Başka bir siteye, sayfaya, aynı sayfa içinde en yukarı - en aşağıya, mail veya telefona yönlendirebiliriz</P>
+ <!--<a href="gidilecek yer"></a>-->
+ 
+ <a href="https://academy.patika.dev/tr/">
+            patika
+ </a> 
+ 
+ <p>Eğer linkin ayrı pencerede açılmasını istiyorsam target:"_blank" eklerim.</p> 
+ 
+ <a href="https://academy.patika.dev/tr/" target="_blank">
+             patika sayfası
+ </a>
+ 
+ <br>
+ 
+ <a href="iletisim.html">
+         İletişim sayfası
+ </a>
+ 
+ 
+ <p>Mail de atabiliriz: </p>
+ 
+ <a href="mailto:info@kodluyoruz.org"> 
+   Kodluyoruz a mail at! 
+ </a>
+ 
+ <p>Telefon da yapabiliyoruz.</p>
+ 
+ <a href="tel:05447554499">
+   Bedo yu ara
+ </a>
+ 
+ <p>Fotoğrafa link gömebiliriz.</p> 
+ 
+ <a href="https://academy.patika.dev/tr/" target="_blank">
+   <img src="https://picsum.photos/200/300" alt="Tıkla Ve Patikaya Git">
+   <br>
+    Patikaya git. 
+ 
+ </a>
+ 
+ <hr>
+ 
+ <h1 id="six">BLOK ELEMENTLER VE İNLİNE ELEMENTLER</h1>
+ <p>Strong komutu ile <strong>kalın</strong>, em komutu ile <em>İtalik</em> yazabiliriz.</p>
+ <p>Html referance io sitesi ile blok ve inline elemanlara bakabiliriz.</p>
+ <a href="https://htmlreference.io/" target="_blank"> 
+   <strong><em>HTML Referance İo</em></strong>
+ </a>
+ 
+ <p>div tam bir blok oluşturur, span ise inline şeffaf bi kutu oluşturur.
+   Hr komutu sayfada bir çizgi oluşturur, tam da bu başlığın üstünde olduğu gibi.
+ </p>
+ 
+ <hr>
+ 
+ <H1 id="seven">HTML Etiketlerine Ekstra Özellikler Ekleme</H1>
+ <p>id ve class sık kullandığımız özelliklerdendir.
+   id kullanırken ayrı bi  isim veremeyiz alt tre kullanmamız gerekir.
+   id isim verir, class sınıflandırır.
+ </p>
+ 
+ <hr>
+ 
+ <h1 id="eight"> İskeletin Genel Yapısını Anlamak</h1>
+ <p>! + tab html yapısı oluşturuyor</p> 
+   
+ <!--<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+ </head>
+ <body>
+   
+ </body>
+ </html>--> 
+  
+  <p>Sitenin görünen tüm kısmı body içinde, görünmeyen kısmı head içinde olur. <br>
+   lang dili, charset karakter setini (Türkçe bunun içinde), title da başlığı ifade eder.
+  </p>. 
+ 
+  <hr>
+ 
+  <h1 id="nine">Semantic(Anlamlandırılmış) HTML Etiketleri Kullanımı</h1>
+  <p>nav, head, section, article, main, aside gibi kelimeler ile div yapısılarını anlamlandırabiliriz. <br> 
+   Böylece kod yazarken karamaşa yaşamayız. </p>
+ </div></article>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div>
+      <h1>Footer</h1>
+      <p>Lorem, ipsum dolor.</p>
+    </div>
+</footer>
+
+
+ 
+ 
+
+
+
+
+ </body>
+ </html>
+
+
